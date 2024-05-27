@@ -1,0 +1,650 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.card {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: none;
+  margin-bottom: 2rem;
+}
+.card-header {
+  background-color: #fff;
+  border-bottom: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #525f7f;
+  background-color: #fff;
+  border: none;
+  border-bottom: 2px solid #f0ad4e;
+  border-radius: 0;
+}
+.nav-link {
+  color: #8898aa;
+  margin-right: 1rem;
+  padding: .5rem 1rem;
+}
+.form-control {
+  border: 1px solid #cad1d7;
+  border-radius: 2rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background-color: #e99d45;
+  border-color: #e99d45;
+}
+.social-btn .btn {
+  border-radius: 2rem;
+  margin: 0.2rem;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  padding: 0;
+}
+.social-btn .btn i {
+  font-size: 1.2rem;
+}
+
+
+/*course-list*/
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden; /* Kartın köşelerini yuvarlak yap */
+}
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.course-image {
+  width: 100%;
+  height: 180px; /* Resim yüksekliği */
+  object-fit: cover;
+}
+.course-content {
+  padding: 15px;
+}
+.course-title {
+  font-size: 1.25rem; /* Başlık font boyutu */
+  color: #333;
+  margin-bottom: 5px;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.course-duration, .course-learners {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem; /* Süre ve katılımcı sayısı font boyutu */
+}
+.course-duration i, .course-learners i {
+  margin-right: 5px;
+}
+ .btn-info {
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.85rem; /* Buton font boyutu */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+ .btn-info:hover {
+  background-color: #138496;
+}
+.start-learning-btn{
+  background-color: #17a2b8;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.85rem; /* Buton font boyutu */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.start-learning-btn:hover {
+  background-color: #138496;
+}
+
+.category-description {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.category-description p{
+  color: black;
+}
+.course-list {
+  padding: 20px;
+}
+.course-item {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.popular-topics {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.topic-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.course-list p{
+  color: black;
+}
+/*course-list*/
+
+
+/*create-course*/
+
+/*create-course*/
+
+
+/*course-details*/
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.course-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.course-card h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.course-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+.course-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.likes i {
+  color: #ff6b6b;
+  margin-right: 5px;
+}
+.course-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.course-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.course-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+.course-info {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #e4f1f6;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.course-duration, .course-learners {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem; /* Süre ve katılımcı sayısı font boyutu */
+}
+.course-duration i, .course-learners i {
+  margin-right: 5px;
+}
+.course-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.course-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.course-card h4 {
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  margin-bottom: 15px;
+}
+
+.course-info {
+  margin-bottom: 15px;
+}
+
+.course-info > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course-info i {
+  margin-right: 5px;
+  color: #17a2b8;
+}
+
+.course-info ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.course-info ul li {
+  margin-bottom: 5px;
+}
+
+.course-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.course-action .likes {
+  display: flex;
+  align-items: center;
+}
+
+.course-action .likes i {
+  color: #ff6b6b;
+  margin-right: 5px;
+}
+
+.course-includes {
+  margin-top: 20px;
+}
+
+.course-includes i {
+  color: #17a2b8;
+  margin-right: 5px;
+}
+
+.course-includes ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.course-includes ul li {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+.course-includes ul li i {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+.course-enrollment {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+.course-enrollment i {
+  color: #ffc107;
+  margin-right: 10px;
+}
+
+
+
+
+.course-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.course-content h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.module-list {
+  list-style: none;
+  padding: 0;
+}
+
+.module-list li {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.module-list li:hover {
+  background-color: #e9ecef;
+}
+
+.module-list li::after {
+  content: "\f078"; /* FontAwesome chevron-down */
+  font-family: 'FontAwesome';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.module-content {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.knowledge-skills-container {
+  padding: 20px;
+}
+
+.knowledge-skills {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.knowledge-skills h2 {
+  color: #1a1919;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.knowledge-skills .row {
+  margin: 0;
+}
+
+.knowledge-skills .col {
+  padding: 0 10px;
+}
+
+.knowledge-skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.knowledge-skills li {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.knowledge-skills li:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.learning-outcomes-container {
+  background-color: #f9f9fa; /* Açık gri arka plan */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.learning-outcomes-container h3 {
+  color: #c7b514; /* Mavi başlık rengi */
+  margin-bottom: 20px;
+}
+
+.learning-outcomes-container .row {
+  margin: 0;
+}
+
+.learning-outcomes-container .col-6 {
+  padding: 0 15px;
+}
+
+.learning-outcomes-container ul {
+  list-style-type: none; /* Liste işaretlerini kaldır */
+  padding-left: 0; /* Sol padding'i sıfırla */
+  margin: 0; /* Margin'i sıfırla */
+  margin-bottom: 15px;
+
+}
+
+.learning-outcomes-container li {
+  background-color: transparent; /* Arka planı transparan yap */
+  color: #333; /* Yazı rengi */
+  padding: 10px 0; /* Üst ve alt padding */
+  border-bottom: 1px solid #ddd; /* Alt çizgi */
+}
+
+.learning-outcomes-container li:last-child {
+  border-bottom: none; /* Son elemanın alt çizgisini kaldır */
+}
+
+
+.btn-modern {
+  background-color: #17a2b8; /* Mavi arka plan rengi */
+  color: white; /* Beyaz yazı rengi */
+  padding: 12px 25px; /* İç boşluk */
+  font-size: 1rem; /* Yazı boyutu */
+  border: none; /* Kenarlık yok */
+  border-radius: 25px; /* Yuvarlak köşeler */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+  transition: all 0.3s; /* Geçiş efekti */
+  cursor: pointer; /* İmleç buton üzerindeyken */
+}
+
+.btn-modern:hover, .btn-modern:focus {
+  background-color: #0056b3; /* Buton üzerine gelindiğinde koyu mavi */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Gölge efekti artar */
+  outline: none; /* Fokus halinde kenarlık yok */
+}
+
+
+/*course-details*/
+
+
+/*videos*/
+.nav-pills .nav-link.active {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.list-group {
+  background-color: #ffffff;
+  border: 1px solid #e2edf7;
+}
+.list-group .list-group-item {
+  border: none;
+}
+.list-group .list-group-item.active {
+  background-color: #6c757d;
+  color: #f8f9fa;
+}
+.nav-pills .nav-link.active{
+  background-color: #1B4242;
+  color: #f8f9fa;
+  font-weight:600;
+}
+.nav-pills .nav-link{
+  color: #1B4242;
+  font-weight:600;
+}
+.embed-responsive-16by9 {
+  background-color: #000;
+  border: 2px solid #6c757d;
+}
+.video-show-container
+{
+  padding-bottom:10rem;
+  margin-top:-7rem
+}
+
+
+
+/* src/components/VideoPlayer.css */
+.video-player-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.video-player {
+  flex: 2;
+}
+
+.video-details {
+  flex: 1;
+}
+
+.video-details h2 {
+  margin-top: 0;
+}
+
+.video-description {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+/*checkout*/
+
+.checkout-container {
+  margin-top: 50px;
+  color: #333;
+}
+
+.checkout-container .card {
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.checkout-container .card-title {
+  color: #ff6600; /* Turuncu renk */
+}
+
+.checkout-container .btn-primary {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.checkout-container .btn-primary:hover {
+  background-color: #e65c00;
+  border-color: #e65c00;
+}
+
+.checkout-container input.form-control {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+.checkout-container input.form-control:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 0 0.2rem rgba(255, 102, 0, 0.25);
+}
+
+.checkout-container .card-text{
+  color: #000000;
+}
